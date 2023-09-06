@@ -1,10 +1,14 @@
-function square(sideLen: number): Shape {
-    return {
-        sideLen,
-        computeArea: function (): number {
-            return sideLen * sideLen
-        }
-    }
+interface Square extends Shape {
+  sideLen: number;
 }
 
-export { square }
+function square(sideLen: number): Square {
+  return {
+    sideLen,
+    computeArea: function (): number {
+      return sideLen * sideLen;
+    },
+  };
+}
+
+export { square };

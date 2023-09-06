@@ -1,4 +1,3 @@
 interface Shape {
-		computeArea(): number;
-		[extraProps: string]: any;
+  computeArea(): number;
 }
